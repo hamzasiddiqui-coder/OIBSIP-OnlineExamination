@@ -44,7 +44,7 @@ public class onlineExam {
         System.out.print("Enter your password: ");
         String password = scanner.next();
 
-        // Replace with actual authentication logic
+        
         if ("hamza".equals(username) && "united".equals(password)) {
             return new User(username);
         } else {
@@ -113,12 +113,7 @@ public class onlineExam {
                     examTimer.cancel();
                 }
             }
-        }, 0, 1000); // Update timer every 1 second
-
-        // Implement MCQ selection and exam logic here
-        // Example: display questions, allow selecting answers, calculate scores, etc.
-
-        // Simulate completing the exam
+        }, 0, 1000); 
         System.out.println("Exam completed.");
         examTimer.cancel();
     }
@@ -138,4 +133,5 @@ public class onlineExam {
             this.username = username;
         }
     }
+   
 }
